@@ -1,0 +1,46 @@
+h1 {
+    color: red;
+}
+
+article {
+    margin-bottom: 42px;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+article > h2 {
+    color: lightslategray
+}
+
+p, span {
+    /* color: lightgray; */
+}
+
+.sponsored-article {
+    border-color: red;
+}
+
+.popular-article {
+    font-weight: bold;
+}
+
+#third {
+    font-size: larger;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button.btn.primary {
+    color: white;
+    background-color: dodgerblue;
+}
+
+button.btn.secondary {
+    color: white;
+    background-color: darkorchid;
+}
