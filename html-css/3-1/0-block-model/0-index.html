@@ -1,0 +1,64 @@
+<style>
+  * {
+    /* default content-box */
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+  }
+
+  .content {
+    background-color: blanchedalmond;
+  }
+
+  .container {
+    background-color: plum;
+    width: 300px;
+    height: 300px;
+    /* height: 200px; */
+
+    /* padding: 32px; */
+    /* padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px; */
+
+    padding: 4px 8px 12px 16px;
+    /* padding-bottom: 48px; */
+
+
+
+    border: 10px solid aqua;
+    
+    border-width: 16px 16px 32px 16px;
+    border-bottom-width: 32px;
+
+    /* border-color: transparent; */
+
+    /* border-left-width: 48px; */
+    border-left-width: 8px;
+    border-left-color: crimson;
+    border-left-style: dashed;
+
+    /* border-right: none; */
+    /* border-left: 8px solid aqua; */
+
+    /* border-radius: 50%; */
+    border-radius: 16px;
+
+    margin: 48px 12px 64px 8px;
+    /* margin-bottom: 128px; */
+  }
+
+  .sizing {
+    box-sizing: content-box;
+    /* box-sizing: border-box; */
+  }
+
+</style>
+
+
+
+<div class="container sizing">
+  <div class="content">Model blokowy</div>
+</div>
+
+<div class="container">Model blokowy</div>
