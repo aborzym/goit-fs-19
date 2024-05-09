@@ -1,0 +1,135 @@
+<title>Flexbox</title>
+
+<style>
+  :root {
+    --item-size: 120px;
+  }
+
+  .full-size {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
+
+<style>
+  .box {
+    width: var(--item-size);
+    height: var(--item-size);
+    background-color: #f2c458;
+    border: 1px solid #600201;
+
+    /* margin-top: 20px; */
+
+    /* display: inline; */
+    /* display: inline-block; */
+  }
+
+  /* article:nth-child(n+2) {
+    margin-top: 30px;
+  } */
+
+  .container {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-between; */
+    
+    /* font-size: 126px; */
+    /* gap: 1rem; */
+    /* gap: 1em; */
+    
+    gap: 10%;
+    
+    /* flex-wrap: wrap; */
+  }
+  
+  .item {
+    /* align-self: flex-end; */
+    
+    /* width: 50px; */
+    /* min-width: 30px; */
+
+    /* flex-basis: 20px; */
+  }
+
+  article.item:nth-child(1) {
+    /* align-self: flex-end; */
+
+    /* flex-grow: 0.2; */
+    /* flex-shrink: 0.1; */
+    
+    /* order: 2; */
+  }
+
+  .item:nth-child(odd) {
+    /* align-self: center; */
+    /* justify-self: flex-end; */
+
+    /* order: 1; */
+  }
+
+  .row {
+    display: flex;
+    gap: 20px;
+  }
+</style>
+
+<main class="container full-size">
+  <div class="row">
+    <article class="item box">1. Adam Małysz</article>
+    <article class="item box">2. Jane Ahonen</article>
+    <article class="item box">3</article>
+  </div>
+
+  <div class="row">
+    <article class="item box">4</article>
+    <article class="item box">5</article>
+    <!-- <article class="item box">5</article>
+    <article class="item box">5</article>
+    <article class="item box">5</article>
+    <article class="item box">5</article>
+    <article class="item box">5</article>
+    <article class="item box">5</article>
+    <article class="item box">5</article> -->
+    <article class="item box">Dodaj zawodnika</article>
+  </div>
+</main>
+
+
+
+
+
+
+
+<!-- <style>
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 160px;
+  }
+
+  .navigation {
+    /* padding-left: 142px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+</style>
+
+<header class="container">
+  <h1 class="logo">Logo</h1>
+
+  <div class="row">
+    <nav class="navigation">
+      <a href="#">First</a>
+      <a href="#">Second</a>
+      <a href="#">Third</a>
+    </nav>
+    <button class="menu">Hamburger</button>
+  </div>
+</header> -->

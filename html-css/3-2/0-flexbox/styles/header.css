@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  background-color: blanchedalmond;
+  padding: 0 24px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+}
+
+.navigation-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 16px;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.contacts {
+  display: flex;
+  gap: 24px;
+}
+
+.contacts .link {
+  color: red;
+}
