@@ -1,0 +1,162 @@
+<title>Pseudoelements - before & after</title>
+
+<style>
+  .box {
+    --pseudo-size: 70px;
+    margin: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    position: relative;
+  }
+
+  .box::before,
+  .box::after {
+    content: "";
+    width: var(--pseudo-size);
+    height: var(--pseudo-size);
+    position: absolute;
+  }
+
+  .box:hover::before,
+  .box:hover::after {
+    background-color: blue;
+    color: white;
+  }
+
+  .box::before {
+    /* content: ""; */
+    content: "Beforek";
+    /* width: var(--pseudo-size); */
+    /* height: var(--pseudo-size); */
+    background-color: red;
+
+    /* position: absolute; */
+    top: calc(-1 * var(--pseudo-size));
+  }
+
+  .box::after {
+    /* content: ""; */
+    content: "Afterek";
+    /* width: var(--pseudo-size); */
+    /* height: var(--pseudo-size); */
+    background-color: green;
+
+    /* position: absolute; */
+    right: calc(-1 * var(--pseudo-size));
+  }
+
+</style>
+
+
+<!-- We could create a Heart out of it with one HTML element -->
+<div class="box"></div>
+
+
+<style>
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: 32px;
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+
+
+  .nav-item:hover::after {
+    display: block;
+  }
+
+  .nav-item::after {
+    display: none;
+
+    --height: 10px;
+    content: "";
+    background: linear-gradient(45deg, red 40%, blue 60%);
+    width: 100%;
+    height: var(--height);
+
+    position: absolute;
+    bottom: calc(-1 * var(--height) - 5px);
+    left: 0;
+  }
+
+  .nav-item::before {
+    content: "";
+    --size: 8px;
+    background-color: crimson;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+
+    position: absolute;
+    right: calc(-1 * var(--size) - 2px);
+  }
+
+</style>
+
+<nav>
+  <ul class="nav-list">
+    <li class="nav-item">
+      <a class="link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="link" href="#">Link 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="link" href="#">Link 3</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<style>
+  .heart {
+    --size: 160px;
+    --color: red;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color);
+    position: relative;
+
+    rotate: -45deg;
+    animation: heartbeat 600ms infinite alternate ease-in-out;
+  }
+
+  .heart::before,
+  .heart::after {
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--color);
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .heart::before {
+    top: calc(50% * -1);
+  }
+
+  .heart::after {
+    right: calc(50% * -1);
+  }
+
+  @keyframes heartbeat {
+    from { transform: scale(1); }
+    to { transform: scale(0.9); }
+  }
+</style>
+
+<div class="heart"></div>

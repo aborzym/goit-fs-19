@@ -1,0 +1,71 @@
+<title>Background</title>
+
+<style>
+  body {
+    /* background-color: red; */
+  }
+
+  .container {
+    width: 95vw;
+    height: 95vh;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+
+
+    background-image: url("./Lena.png");
+
+    /* background-repeat: repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    background-repeat: no-repeat;
+
+
+
+    /* background-position: 50px 100px; */
+    /* background-position: 50% 50%; */
+    /* background-position: bottom right; */
+
+    /* background-size: 200px 150px; */
+    /* background-size: 150px 150px; */
+    
+    /* height: 30vh; */
+    /* background-size: contain; */
+    /* background-size: cover; */
+
+    /* height: 800vh; */
+    /* background-attachment: fixed; */
+    
+    height: 800vh;
+    background-attachment: fixed;
+    background-position: center;
+
+    filter: brightness(0.5);
+  }
+
+  p {
+    font-size: xx-large;
+    text-shadow: 0 0 50px rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+</style>
+
+
+<main class="container">
+  <p>Hello</p>
+</main>
+
+
+<script>
+
+  const container = document.querySelector("main.container");
+  console.log({ container });
+
+  document.addEventListener("mousemove", (event) => {
+    const { clientX, clientY } = event;
+    console.log(clientX, clientY);
+    container.style.backgroundPosition = `${clientX}px ${clientY}px`;
+  });
+
+</script>
