@@ -1,0 +1,66 @@
+<title>Input</title>
+<link rel="stylesheet" href="./form.css">
+
+<style>
+
+    input {
+        padding: 10px 20px;
+        border: 1px dashed salmon;
+        border-radius: 12px;
+    }
+
+    button {
+        padding: 1rem 2rem;
+        border: none;
+        background-color: dodgerblue;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    button:hover {
+        box-shadow: 4px 4px 10px dodgerblue;
+    }
+
+</style>
+
+<form autocomplete="off" class="column">
+
+    <input
+        type="text"
+        name="login"
+        placeholder="Login"
+        minlength="3"
+        maxlength="16"
+        required
+    >
+
+    <input
+        type="email"
+        name="email"
+        placeholder="user@mail.com"
+        required
+    >
+
+    <input
+        type="password"
+        minlength="8"
+        required
+    >
+
+    <input
+        type="text"
+        pattern="\d+"
+        required
+    >
+
+    <input
+        type="number"
+        required
+        min="5"
+        step="0.1"
+    >
+
+    <!-- <button type="button">Submit form</button> -->
+    <button type="submit">Submit form</button>
+</form>

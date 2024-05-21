@@ -1,0 +1,63 @@
+<title>Label</title>
+
+<style>
+
+    form {
+        padding: 1rem;
+    }
+
+    form:focus-within {
+        border: 1px solid red;
+    }
+
+    input::placeholder {
+        color: dodgerblue;
+        font-size: larger;
+    }
+
+    input {
+        font-size: smaller;
+    }
+
+</style>
+<style>
+    .pwd.msg {
+        color: red;
+    }
+
+    .pwd.msg.off {
+        /* display: none; */
+        visibility: hidden;
+    }
+</style>
+
+<form autocomplete="off">
+    <fieldset>
+        <label for="login">Login</label>
+        <!-- <div></div>
+        <div></div>
+        <div></div>
+        <div></div> -->
+        <input
+            id="login"
+            type="text"
+            name="user_login"
+            placeholder="Login"
+            autofocus
+        >
+    </fieldset>
+    
+    <fieldset>
+        <label for="password">
+            <span>Password</span>
+            <input type="password" name="user_password" id="password">
+            
+            <div>
+                <span class="pwd msg off">Error/Validation message</span>
+            </div>
+        </label>
+    </fieldset>
+    
+
+    <button type="submit">Login</button>
+</form>

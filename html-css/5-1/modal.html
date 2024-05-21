@@ -1,0 +1,78 @@
+<style>
+
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+
+    .modal-backdrop {
+        display: none;
+    }
+
+    .modal-backdrop.is-open {
+        display: block;
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+
+        padding: 1.5rem;
+        background-color: blanchedalmond;
+        width: 500px;
+        border-radius: 12px;
+    }
+
+</style>
+
+<button id="open">Open modal</button>
+
+<div class="modal-backdrop" id="modal-backdrop">
+    <div class="backdrop"></div>
+    <div class="modal">
+        
+        <button id="close">X</button>
+        
+        <h2>Leave your contacts and we will call you back</h2>
+        <form>
+            <div>
+                <label>Login</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Mobile</label>
+                <input type="tel">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    const ACTIVE_CLASS = "is-open";
+    const modal = document.querySelector("#modal-backdrop");
+    const openBtn = document.querySelector("#open");
+    const closeBtn = document.querySelector("#close");
+    const backdrop = document.querySelector(".backdrop");
+
+
+    openBtn.addEventListener("click", () => {
+        modal.classList.add(ACTIVE_CLASS);
+    });
+
+    closeBtn.addEventListener("click", () => {
+        modal.classList.remove(ACTIVE_CLASS);
+    });
+
+    backdrop.addEventListener("click", () => {
+        modal.classList.remove(ACTIVE_CLASS);
+    });
+
+</script>
