@@ -1,0 +1,125 @@
+<title>Fieldset & Legend</title>
+
+<style>
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+</style>
+
+<!-- <form>
+    <fieldset>
+        <legend>Order information</legend>
+        
+        <label>
+          Name:
+          <input type="text" name="name">
+        </label>
+    
+        <label>
+          Address:
+          <input type="text" name="address">
+        </label>
+    
+        <label>
+          Contact number:
+          <input type="tel" name="phone">
+        </label>
+    </fieldset>
+
+      <button type="submit">Order</button>
+</form> -->
+
+
+
+
+<form>
+    <fieldset>
+      <legend>Order contact information</legend>
+      
+      <label>
+        Name:
+        <input type="text" name="name">
+      </label>
+  
+      <label>
+        Address:
+        <input type="text" name="address">
+      </label>
+  
+      <label>
+        Contact number:
+        <input type="tel" name="phone">
+      </label>
+    </fieldset>
+  
+    <fieldset>
+      <legend>Order details</legend>
+
+      <fieldset>
+        <legend>Main meal</legend>
+    
+        <select name="main-meal">
+          <option value="steak">Steak</option>
+          <option value="burger" selected>Burger</option>
+          <option value="pizza">Pizza</option>
+          <option value="salad">Salad</option>
+        </select>
+    
+      </fieldset>
+  
+      <fieldset>
+        <legend>Sides</legend>
+    
+        <label>
+          <input type="checkbox" name="fries" checked>
+          Fries
+        </label>
+    
+        <label>
+          <input type="checkbox" name="nuggies">
+          Chicken Nuggets
+        </label>
+    
+        <label>
+          <input type="checkbox" name="veggies">
+          Veggies
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Drink</legend>
+
+        <label for="water">
+          <input type="radio" name="drink" id="water" checked>
+          Water
+        </label>
+
+        <label for="cola">
+          <input type="radio" name="drink" id="cola">
+          Cola
+        </label>
+
+        <label for="fanta">
+          <input type="radio" name="drink" id="fanta">
+          Fanta
+        </label>
+
+        <label for="sprite">
+          <input type="radio" name="drink" id="sprite">
+          Sprite
+        </label>
+
+        <label for="orangejuice">
+          <input type="radio" name="drink" id="orangejuice">
+          Orange Juice
+        </label>
+
+      </fieldset>
+    </fieldset>
+  
+    <input type="submit" value="Order">
+</form>

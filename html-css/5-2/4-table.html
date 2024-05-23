@@ -1,0 +1,143 @@
+<title>Table</title>
+  
+<style>
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  tr:nth-child(2n) {
+    background-color: lightblue;
+  }
+</style>
+  
+
+<table>
+  <!-- <h1>Table</h1> -->
+  <caption>Table</caption>
+
+  <thead>
+    <tr>
+      <th scope="col">A</th>
+      <th scope="col" class="red">B</th>
+      <th scope="col" colspan="2">C</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td rowspan="2">First</td>
+      <td class="red">Second</td>
+      <td>Third</td>
+    </tr>
+
+    <tr>
+      <td>Fourth</td>
+      <td class="red" colspan="3">Fifth</td>
+      <!-- <td>Sixth</td> -->
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th scope="row">Sum</th>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tfoot>
+</table>
+
+<br>
+<br>
+<br>
+
+
+<table>
+  <caption>Linia numer 18</caption>
+
+  <thead>
+    <tr>
+      <th>Przystanek</th>
+      <th>Dni robocze</th>
+      <th>Soboty</th>
+      <th>Święta</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Lecha</td>
+      <td>8:30 9:20 11:45</td>
+      <td>9:30 10:20 12:45</td>
+      <td>12:00 16:20</td>
+    </tr>
+
+    <tr>
+      <td>Wawelska</td>
+      <td>8:35 9:25 11:50</td>
+      <td>9:35 10:25 12:50</td>
+      <td>12:05 16:25</td>
+      <!-- <td><input type="text"></td> -->
+    </tr>
+
+    <tr>
+      <td colspan="3" rowspan="2">Dni wolne od kursów</td>
+      <td>Święto Trzech Króli</td>
+    </tr>
+
+    <tr>
+      <td>Nowy Rok</td>
+      <!-- <td>Nowy Rok</td> -->
+    </tr>
+  </tbody>
+
+  <tfoot>
+    Rozkład jazdy MPK HTML
+  </tfoot>
+</table>
+
+
+
+<table id="players-table">
+  <caption>OGame Players en800</caption>
+
+  <thead>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Alliance</th>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+<script src="./players.js"></script>
+<script>
+
+  const html = players.reduce((acc, player) => {
+    return acc + `
+    <tr>
+      <td>${player?.id ?? ""}</td>
+      <td>${player?.name ?? ""}</td>
+      <td>${player?.status ?? ""}</td>
+      <td>${player?.alliance ?? ""}</td>
+    </tr>
+    `;
+    
+  }, "");
+
+  const tbody = document.querySelector("table#players-table tbody");
+  tbody.innerHTML = html; // innerHTML is dangerous!
+
+</script>
