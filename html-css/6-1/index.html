@@ -1,0 +1,21 @@
+<style>
+
+    .checkbox-span {
+        font-size: 64px;
+        color: red;
+    }
+
+    .checkbox-input:checked +
+    .checkbox-label .checkbox-span {
+        color: lime;
+        background-color: blueviolet;
+    }
+    
+</style>
+
+<input type="checkbox" id="tos" class="checkbox-input visually-hidden">
+<label for="tos" class="checkbox-label">
+    <span class="checkbox-span">
+        Akceptuje regulamin
+    </span>
+</label>
