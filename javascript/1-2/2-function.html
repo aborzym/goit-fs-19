@@ -1,0 +1,212 @@
+<title>Functions</title>
+
+<script id="Function">
+
+    // // perform work
+    // console.log("asdasdas");
+    // console.log( Math.ceil(4.2) );
+
+    // function writeMessage() {
+    //     console.log("Hello there!");
+    //     console.log("Have a nice day!");
+    // }
+
+    // writeMessage();
+    // writeMessage();
+    // writeMessage();
+
+
+
+    // const fn = function() {
+
+    // }
+
+    // fn();
+
+
+
+    // const arrow = () => {
+
+    // };
+
+    // arrow();
+
+</script>
+
+<script id="Arguments">
+
+    // function greetUser(user) {
+    //     console.log(`Hi ${user}!`);
+    //     // console.log("Hi " + user + "!");
+    // }
+
+    // greetUser("Adam");
+    // greetUser("Beth");
+    // greetUser("Cecil");
+    // greetUser("Dorthy");
+
+    // const somebody = "Somebody That I Used to Know";
+    // greetUser(somebody);
+
+
+    
+    // function greetUserWithMessage(user, msg) {
+    //     console.log(`${user}! ${msg}`);
+    // }
+
+    // greetUserWithMessage("Adam", "Hi");
+    // greetUserWithMessage("Beth", "Hello");
+    // greetUserWithMessage("Cecil", "Welcome");
+    // greetUserWithMessage("Dorthy", "Cheers");
+
+    // const bobby = "Bob";
+    // greetUserWithMessage(bobby, "Yo mate!");
+
+
+    // const name = "Kuba";
+    // const greeting = "Elo";
+
+    // greetUserWithMessage(name, greeting);
+
+</script>
+
+<script id="Return keyword">
+
+    // // void function type
+    // function add(x, y) {
+    //     console.log(x + y); // logs 5, returns nothing undefined
+    // }
+
+    // const result = add(2, 3); // undefined
+    // console.log(result, typeof result); // undefined
+
+
+
+    
+    // function add2(x, y) {
+    //     // console.log is a void function type
+    //     return console.log(x + y); // undefined
+    // }
+
+    // const result2 = add(2, 3); // undefined
+    // console.log(result2, typeof result2); // undefined
+
+    // console.log(result2 + 2); // NaN
+
+
+
+    // // number function type (return value is of type number)
+    // function add3(x, y) {
+    //     return x + y;
+    // }
+
+    // const result3 = add3(2, 2);
+    // console.log(result3, typeof result3);
+
+    // console.log(result3 + 3);
+
+    // console.log("Summary:");
+    // console.log("Add 1:", { result, t: typeof result });
+    // console.log("Add 2:", { result2, t: typeof result2 });
+    // console.log("Add 3:", { result3, t: typeof result3 });
+
+    // function logSummary(label, someResult) {
+    //     const result = someResult;
+    //     const t = typeof someResult;
+    //     console.log(label, { result, t });
+    // }
+
+    // console.log("Summary:");
+    // logSummary("Add 1:", result);
+    // logSummary("Add 2:", result2);
+    // logSummary("Add 3:", result3);
+
+</script>
+
+<script id="Global scope">
+
+    // const GREETING = "WELCOME!";
+
+    // function prepareGreeting(user) {
+    //     const something = 4;
+    //     return `${GREETING} ${user}`;
+    // }
+
+    // // function prepareGreeting(user) {
+    // //     const something = 4;
+    // //     // return `${GREETING} ${user}`;
+        
+    // //     function joinStringsWithSpace() {
+    // //         return GREETING + " " + user;
+    // //     }
+        
+    // //     return joinStringsWithSpace();
+    // // }
+
+    // // console.log(something); // yikes
+
+    // const mattGreeting = prepareGreeting("Matthew");
+    // console.log(mattGreeting);
+
+    // console.log(prepareGreeting("Mathew"));
+
+</script>
+
+<script id="String operations - example">
+    
+    // getElementWidth("50px", "8px", "4px");
+
+    // function getElementWidth(width, padding, border) {
+    //     const   a = width.replace("px", ""),
+    //             b = padding.split("px")[0],
+    //             c = border.slice(0, -2); // border.slice(0, border.length - 2);
+
+    //     console.log(a, b, c);
+    //     console.log(typeof a, typeof b, typeof c);
+
+    //     return Number(a) + 2*Number(b) + 2*Number(c);
+    // }
+
+    // const elemWidth = getElementWidth("50px", "8px", "4999px");
+    // console.log(elemWidth);
+
+
+
+
+    // function removePx(str) {
+    //     return str.replace("px", "");
+    // }
+
+    // function getPixelValue(pixels) {
+    //     // return Number(pixels.replace("px", ""));
+    //     // return Number.parseInt(pixels.replace("px", ""), 10);
+    //     // return parseInt(removePx(pixels), 10);
+
+    //     return parseInt(pixels.replace("px", ""), 10);
+    // }
+
+    // function getElemWidth(a, b, c) {
+    //     // return Number(removePx(a)) + Number(removePx(b)) + Number(removePx(c));
+    //     return getPixelValue(a) + 2*getPixelValue(b) + 2*getPixelValue(c);
+    // }
+
+    // function getElemWidth2(a, b, c) {
+    //     return parseInt(a) + 2*parseInt(b) + 2*parseInt(c);
+    // }
+
+    // console.log(getElemWidth2("50px", "8px", "4999px"));
+
+</script>
+
+<script id="Task - date parsing & string formatting">
+    // // Tasks
+    // // Time parsing function from miliseconds to minutes and seconds.
+
+    // // modulo, template literal `${}`, pad
+    function formatTime(miliseconds) {
+        
+    }
+
+    console.log(formatTime(121000)); // "02:01" (mm:ss)
+
+</script>

@@ -1,0 +1,92 @@
+<title>Strings</title>
+
+<script id="String & Concatenation">
+
+    // const hello     = "Hello World";
+    // const hello1    = 'Hello World';
+    // const hello2    = `Hello World`;
+
+    // const first = "Hello";
+    // const second = "World";
+
+
+    // console.log(first + second); // "HelloWorld"
+
+    // console.log(first + " " + second + "!"); // "Hello World!"
+
+</script>
+
+<script id="String interpolation">
+
+    // // const name = "Kuba";
+    // // const temperature = 28;
+
+    // // // prompt || default value;
+    // const name = prompt("What is your name?") || "Kuba";
+    // const temperature = prompt("What is the temperature today?") || "28";
+
+
+    // const message = `Hello there ${name}. How is your day? Todays temperature is ${temperature} degrees.`;
+    // console.log(message);
+
+
+
+    // const nameType = typeof name;
+    // const temperatureType = typeof temperature;
+
+    // console.log({ nameType, temperatureType });
+
+</script>
+
+<script id="Appending strings">
+
+    // let text = "A";
+
+    // // appending - dodawanie znaków na końcu
+    // text = text + "b";
+    // text += "c";
+    // text += "d";
+
+    // // prepending - dodawanie znaków na poczatku
+    // text = "123_" + text;
+
+    // console.log(text);
+
+</script>
+
+<script id="String length property">
+
+    // // const password = "admin";
+    // // const password = "admin123";
+    // const password = prompt(
+    //     `Please input your password. It should be at least 6 characters long.`
+    // );
+
+    // const pwdLength = password.length;
+
+    // const isRequiredLength = pwdLength >= 6;
+
+    // console.log({ isRequiredLength, pwdLength, password });
+
+</script>
+
+<script id="String indexing">
+
+    let sentence = "Ala ma kota!";
+    console.log(`Sentence(${sentence.length}):`, sentence);
+
+    const firstLetter = sentence[0];
+    console.log({ firstLetter });
+
+    const lastIndex = sentence.length - 1; // what is the last index?
+    const lastCharacter = sentence[lastIndex]; // !
+    console.log({ lastCharacter });
+
+
+
+    sentence[lastIndex] = "?"; // "Ala ma kota!"
+    console.log(sentence);
+
+    // To change the string - we need string methods ->
+
+</script>
