@@ -1,0 +1,42 @@
+<head>
+    <title>ShopIT</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
+	<script src='https://cdn.plot.ly/plotly-2.32.0.min.js'></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./data.js" defer></script>
+    <script src="./script.js" defer></script>
+</head>
+
+<!-- 1. Render items into container based on the JSON data -->
+<!-- 2. Add single listener to handle clicking/unclicking the item -->
+<!-- 3. Adjust the HTML accordingly. Use CSS classes for any visual states -->
+<!-- 4. Summarise selected products in a list with total of their $ -->
+<!-- 5. Make a Pie/Donut chart using Plotly with grouped categories -->
+ <!-- https://plotly.com/javascript/ -->
+
+<body>
+    <header class="top-bar">
+        <h1 class="logo">ShopIT</h1>
+        <img class="cart-shortcut" src="./cart.png" alt="Cart icon">
+    </header>
+
+    <main>
+        <!-- content here -->
+
+        <section id="summary">
+
+        </section>
+
+        <ul id="products-list" class="products-list items-layout">
+                <template>
+                    <article class="product-card">
+                        <img src="https://picsum.photos/id/151/200/300" alt="Image of a product" width="300px" height="450px">
+                        <h3 class="name">Wireless Bluetooth Headphones</h3>
+                        <p class="price">59.99 $</p>
+                        <p class="description">High-quality wireless Bluetooth headphones with noise cancellation and 20-hour battery life.</p>
+                        <span class="category">Electronics</span>
+                    </article>
+                </template>
+        </ul>
+    </main>
+</body>
