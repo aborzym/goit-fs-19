@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some App</title>
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./mocked-api.js"></script>
+    <script type="module" src="./app.js" defer></script>
+    <style>
+
+        @keyframes spin {
+            from { rotate: 0deg; }
+            to { rotate: 360deg; }
+        }
+
+        .spinner {
+            --size: 50px;
+            width: var(--size);
+            height: var(--size);
+            border-style: solid;
+            border-radius: 50%;
+            border-color: transparent;
+            border-top-color: black;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        #products {
+            /* list-style-type: none; */
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="column">
+
+        <button>Load Products</button>
+
+        <ol id="products">
+            <!-- <div class="spinner"></div> -->
+        </ol>
+
+    </main>
+</body>
+</html>
