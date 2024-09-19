@@ -1,0 +1,82 @@
+[
+  {
+    "category": "FOOD",
+    "name": "Orange",
+    "price": 8.49
+  },
+  {
+    "category": "FOOD",
+    "name": "Grapes",
+    "price": 15.0
+  },
+  {
+    "category": "FOOD",
+    "name": "Strawberry",
+    "price": 12.3
+  },
+  {
+    "category": "ELECTRONICS",
+    "name": "Smartphone",
+    "price": 499.99
+  },
+  {
+    "category": "ELECTRONICS",
+    "name": "Laptop",
+    "price": 899.99
+  },
+  {
+    "category": "ELECTRONICS",
+    "name": "Headphones",
+    "price": 199.99
+  },
+  {
+    "category": "CLOTHING",
+    "name": "T-shirt",
+    "price": 25.99
+  },
+  {
+    "category": "CLOTHING",
+    "name": "Jeans",
+    "price": 49.99
+  },
+  {
+    "category": "CLOTHING",
+    "name": "Jacket",
+    "price": 120.0
+  },
+  {
+    "category": "BOOKS",
+    "name": "The Great Gatsby",
+    "price": 15.99
+  },
+  {
+    "category": "BOOKS",
+    "name": "1984",
+    "price": 13.45
+  },
+  {
+    "category": "BOOKS",
+    "name": "To Kill a Mockingbird",
+    "price": 18.99
+  },
+  {
+    "category": "FURNITURE",
+    "name": "Dining Table",
+    "price": 350.0
+  },
+  {
+    "category": "FURNITURE",
+    "name": "Office Chair",
+    "price": 150.0
+  },
+  {
+    "category": "FURNITURE",
+    "name": "Bed Frame",
+    "price": 450.0
+  },
+  {
+    "category": "FURNITURE",
+    "name": "Bookshelf",
+    "price": 120.0
+  }
+]
