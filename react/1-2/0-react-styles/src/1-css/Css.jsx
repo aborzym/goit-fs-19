@@ -9,7 +9,6 @@ export const Css = () => {
 
   return (
     <main>
-      {/* <link rel="stylesheet" href="./src/1-css/styles.css" /> */}
       <h1 className="danger">
         CSS - <span className={cls}>{cls}</span>
       </h1>

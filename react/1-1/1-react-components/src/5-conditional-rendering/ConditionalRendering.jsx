@@ -27,11 +27,11 @@ const UserAvatar = () => {
 // };
 
 export const ConditionalRendering = () => {
-  const isLoggedIn = true;
+  // const isLoggedIn = true;
   // const isLoggedIn = false;
-  // const isLoggedIn = Math.random() > 0.5;
+  const isLoggedIn = Math.random() > 0.5;
 
-  // const avatar = isLoggedIn ? <UserAvatar /> : "No avatar";
+  const avatar = isLoggedIn ? <UserAvatar /> : "No avatar";
 
   // if (isLoggedIn) return <UserAvatar />;
   // return null;
@@ -39,7 +39,7 @@ export const ConditionalRendering = () => {
 
   return (
     <main>
-      {isLoggedIn && <UserAvatar />}
+      {/* {isLoggedIn && <UserAvatar />} */}
       {/* {0 && false} */}
 
       {/* {isLoggedIn ? <UserAvatar /> : null} */}
@@ -48,7 +48,7 @@ export const ConditionalRendering = () => {
 
       {/* {isLoggedIn ? <UserAvatar /> : <p>User not logged in!</p>} */}
 
-      {/* {avatar} */}
+      {avatar}
     </main>
   );
 };

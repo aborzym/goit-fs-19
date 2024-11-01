@@ -31,7 +31,6 @@ const variantStyles = (variant) => {
       throw new Error(`Invalid variant of "${variant}"`);
   }
 };
-
 // const availableVariants = [
 //   "primary",
 //   "secondary",

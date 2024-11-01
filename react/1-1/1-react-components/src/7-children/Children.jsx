@@ -18,7 +18,7 @@ export const Children = () => (
     <ChildlessComp>I'm a childless component</ChildlessComp>
     <ChildlessComp />
 
-    <CompWithChildren>I'm a component with a child</CompWithChildren>
+    <CompWithChildren>I'm a component with a child </CompWithChildren>
     <CompWithChildren />
 
     <CompWithChildren>

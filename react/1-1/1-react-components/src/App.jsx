@@ -10,7 +10,7 @@ import { CompWithPropTypes } from "./8-prop-types/PropTypes";
 
 export const App = () => (
   <>
-    <Setup />
+    {/* <Setup /> */}
     {/* <Components /> */}
     {/* <Modules /> */}
     {/* <Jsx /> */}
@@ -18,6 +18,6 @@ export const App = () => (
     {/* <ConditionalRendering /> */}
     {/* <Mapping /> */}
     {/* <Children /> */}
-    {/* <CompWithPropTypes /> */}
+    <CompWithPropTypes />
   </>
 );
